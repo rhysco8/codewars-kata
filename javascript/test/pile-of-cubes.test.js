@@ -17,5 +17,5 @@ describe('returns number of cubes', () => {
 
   test('returns -1 when m = 34', () => {
     expect(findNb(34)).toBe(-1);
-  })
+  });
 });
