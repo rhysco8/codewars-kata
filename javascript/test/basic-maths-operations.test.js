@@ -10,4 +10,8 @@ describe('performs appropriate mathematical operation', () => {
   test('performs subtraction', () => {
     expect(basicOp('-', 15, 18)).toBe(-3);
   });
+
+  test('performs multiplication', () => {
+    expect(basicOp('*', 5, 5)).toBe(25);
+  });
 });
