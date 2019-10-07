@@ -14,4 +14,8 @@ describe('performs appropriate mathematical operation', () => {
   test('performs multiplication', () => {
     expect(basicOp('*', 5, 5)).toBe(25);
   });
+
+  test('performs division', () => {
+    expect(basicOp('/', 49, 7)).toBe(7);
+  });
 });
