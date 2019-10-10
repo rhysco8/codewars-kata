@@ -8,4 +8,8 @@ describe('summation adds numbers from 1 to n', () => {
   test('returns 3 when passed 2', () => {
     expect(summation(2)).toBe(3);
   });
+
+  test('returns 36 when passed 8', () => {
+    expect(summation(8)).toBe(36);
+  });
 });
