@@ -1,5 +1,11 @@
 "use strict";
 
 module.exports = function positiveSum(array) {
-  return 0
+  var result = 0
+  array.forEach(function(number) {
+    if (number > 0) {
+      result += number
+    }
+  });
+  return result
 }
