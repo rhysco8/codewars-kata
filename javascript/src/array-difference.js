@@ -1,5 +1,11 @@
 "use strict";
 
 module.exports = function arrayDiff (a, b) {
-  return a
+  let result = []
+  a.forEach(element => {
+    if (!b.includes(element)) {
+      result.push(element)
+    }
+  });
+  return result
 }

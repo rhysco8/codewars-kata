@@ -10,4 +10,8 @@ describe('remove values from list a which are present in list b', () => {
   test('returns [1, 8, 2] when passed ([1, 8, 2], [])', () => {
     expect(arrayDiff([1, 8, 2], [])).toStrictEqual([1, 8, 2]);
   });
+
+  test('returns [4] when passed ([3, 4], [3])', () => {
+    expect(arrayDiff([3, 4], [3])).toStrictEqual([4]);
+  });
 });
