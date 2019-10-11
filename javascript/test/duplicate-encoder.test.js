@@ -12,6 +12,10 @@ describe('converts string to new string', () => {
   });
 
   test('converts Success to )())())', () => {
-    expect(duplicateEncode("Success")).toBe(")())())")
+    expect(duplicateEncode("Success")).toBe(")())())");
   });
+
+  test('converts "(( @" to ))((', () => {
+    expect(duplicateEncode("(( @")).toBe("))((");
+  })
 });
