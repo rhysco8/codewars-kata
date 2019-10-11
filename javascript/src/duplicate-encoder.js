@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = function duplicateEncode (word) {
-  var lettersArray = word.split("")
+  var lettersArray = word.toLowerCase().split("")
   var duplicates = findDuplicates(lettersArray)
   var encodedArray = []
   lettersArray.forEach(letter => {

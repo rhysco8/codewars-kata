@@ -10,4 +10,8 @@ describe('converts string to new string', () => {
   test('converts recede to ()()()', () => {
     expect(duplicateEncode("recede")).toBe("()()()");
   });
+
+  test('converts Success to )())())', () => {
+    expect(duplicateEncode("Success")).toBe(")())())")
+  });
 });
