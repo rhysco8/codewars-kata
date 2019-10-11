@@ -9,3 +9,4 @@ TDDing Codewars katas
 * [Grasshopper - Summation](https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/javascript)
 * [Sum of positive](https://www.codewars.com/kata/5715eaedb436cf5606000381/train/javascript)
 * [Array Difference](https://www.codewars.com/kata/523f5d21c841566fde000009/train/javascript)
+* [Duplicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/javascript)
