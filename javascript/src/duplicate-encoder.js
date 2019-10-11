@@ -1,27 +1,33 @@
 "use strict";
 
 module.exports = function duplicateEncode (word) {
-  let firstAppearance = []
-  var duplicateAppearance = []
-  let wordArray = word.split("")
-
-  wordArray.forEach(letter => {
-    if (!firstAppearance.includes(letter)) {
-      firstAppearance.push(letter)
-    } else {
-      if (!duplicateAppearance.includes(letter)) {
-        duplicateAppearance.push(letter)
-      }
-    }
-  });
+  var lettersArray = word.split("")
+  var duplicates = findDuplicates(lettersArray)
   var encodedArray = []
-  wordArray.forEach(letter => {
-    if (duplicateAppearance.includes(letter)) {
-      encodedArray.push(')')
+  lettersArray.forEach(letter => {
+    if (duplicates.includes(letter)) {
+      encodedArray.push(')');
     } else {
-      encodedArray.push('(')
+      encodedArray.push('(');
     }
   });
 
   return encodedArray.join("")
+}
+
+function findDuplicates(array) {
+  let firstAppearance = []
+  let arrayOfDuplicates = []
+
+  array.forEach(letter => {
+    if (!firstAppearance.includes(letter)) {
+      firstAppearance.push(letter)
+    } else {
+      if (!arrayOfDuplicates.includes(letter)) {
+        arrayOfDuplicates.push(letter)
+      }
+    }
+  });
+
+  return arrayOfDuplicates;
 }
