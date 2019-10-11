@@ -7,5 +7,5 @@ module.exports = function arrayDiff (a, b) {
       result.push(element)
     }
   });
-  return result
+  return result;
 }
