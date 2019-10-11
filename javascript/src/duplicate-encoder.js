@@ -17,17 +17,17 @@ module.exports = function duplicateEncode (word) {
 
 function findDuplicates(array) {
   let firstAppearance = []
-  let arrayOfDuplicates = []
+  let duplicatesArray = []
 
-  array.forEach(letter => {
-    if (!firstAppearance.includes(letter)) {
-      firstAppearance.push(letter)
+  array.forEach(element => {
+    if (!firstAppearance.includes(element)) {
+      firstAppearance.push(element)
     } else {
-      if (!arrayOfDuplicates.includes(letter)) {
-        arrayOfDuplicates.push(letter)
+      if (!duplicatesArray.includes(element)) {
+        duplicatesArray.push(element)
       }
     }
   });
 
-  return arrayOfDuplicates;
+  return duplicatesArray;
 }
