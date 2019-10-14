@@ -1,5 +1,11 @@
 "use strict";
 
 module.exports = function tribonacci(signature, n) {
-  return [1,1,1,3,5,9,17,31,57,105]
+  var sequence = signature
+  for (var i = 0; i < 7; i++) {
+    let lastElement = sequence.length - 1
+    let nextNumber = sequence[lastElement] + sequence[lastElement - 1] + sequence[lastElement - 2]
+    sequence.push(nextNumber)
+  }
+  return sequence
 }
