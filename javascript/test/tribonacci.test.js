@@ -18,4 +18,8 @@ describe('returns first n elements', () => {
   test('returns [1] given ([1,1,1],1)', () => {
     expect(tribonacci([1,1,1],1)).toStrictEqual([1]);
   });
+
+  test('returns [] given ([300,200,100],0)', () => {
+    expect(tribonacci([300,200,100],0)).toStrictEqual([]);
+  });
 });
