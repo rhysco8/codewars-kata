@@ -22,4 +22,8 @@ describe('returns first n elements', () => {
   test('returns [] given ([300,200,100],0)', () => {
     expect(tribonacci([300,200,100],0)).toStrictEqual([]);
   });
+
+  test('works with floats as well as integers', () => {
+    expect(tribonacci([0.5, 0.5, 0.5],10)).toStrictEqual([0.5,0.5,0.5,1.5,2.5,4.5,8.5,15.5,28.5,52.5])
+  });
 });
