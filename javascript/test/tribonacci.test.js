@@ -8,6 +8,10 @@ describe('returns first n elements', () => {
   });
 
   test('returns [0,0,1,1,2,4,7,13,24,44] given ([0,0,1],10)', () => {
-    expect(tribonacci([0,0,1],10)).toStrictEqual([0,0,1,1,2,4,7,13,24,44]);
-  })
+    expect(tribonacci([0,0,1], 10)).toStrictEqual([0,0,1,1,2,4,7,13,24,44]);
+  });
+
+  test('returns [0,0,0,0,0,0,0,0,0,0] given ([0,0,0],10)', () => {
+    expect(tribonacci([0,0,0], 10)).toStrictEqual([0,0,0,0,0,0,0,0,0,0]);
+  });
 });
