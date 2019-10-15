@@ -1,11 +1,19 @@
 "use strict";
 
 module.exports = function tribonacci(signature, n) {
-  var sequence = signature
-  for (var i = 0; i < 7; i++) {
-    let lastElement = sequence.length - 1
-    let nextNumber = sequence[lastElement] + sequence[lastElement - 1] + sequence[lastElement - 2]
-    sequence.push(nextNumber)
+  let sequence
+  if (n <= signature.length) {
+    sequence = signature.slice(0, n)
+  } else {
+    sequence = signature
+    for (var i = 2; sequence.length < n; i++) {
+      sequence.push(nextNumber(sequence))
+    }
   }
   return sequence
+}
+
+function nextNumber(array) {
+  let lastElement = array.length - 1
+  return array[lastElement] + array[lastElement - 1] + array[lastElement - 2]
 }

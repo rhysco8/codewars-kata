@@ -14,4 +14,8 @@ describe('returns first n elements', () => {
   test('returns [0,0,0,0,0,0,0,0,0,0] given ([0,0,0],10)', () => {
     expect(tribonacci([0,0,0], 10)).toStrictEqual([0,0,0,0,0,0,0,0,0,0]);
   });
+
+  test('returns [1] given ([1,1,1],1)', () => {
+    expect(tribonacci([1,1,1],1)).toStrictEqual([1]);
+  });
 });
