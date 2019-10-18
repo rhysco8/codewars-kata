@@ -10,4 +10,8 @@ describe('returns mulitplicative persistence', () => {
   test('returns 1 given 71', () => {
     expect(persistence(71)).toBe(1);
   });
-})
+
+  test('returns 2 given 25', () => {
+    expect(persistence(25)).toBe(2);
+  });
+});
