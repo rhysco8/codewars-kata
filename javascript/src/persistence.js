@@ -1,7 +1,9 @@
 "use strict";
 
 module.exports = function persistence(number) {
-  if (number < 9) {
-    return 0
+  var count = 0
+  if (number.toString().length > 1) {
+    count += 1
   }
+  return count
 }
