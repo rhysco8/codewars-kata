@@ -11,7 +11,11 @@ describe('decodes dubstep song', () => {
     expect(songDecoder("AWUBBWUBC")).toBe("A B C");
   });
 
-  test('converts "AWUBWUBB" to "A B"', () => {
+  test('replace multiple WUBs with only 1 space', () => {
     expect(songDecoder("AWUBWUBB")).toBe("A B");
+  });
+
+  test('removes heading or trailing whitespace', () => {
+    expect(songDecoder("WUBAWUBBWUB")).toBe("A B");
   });
 });
