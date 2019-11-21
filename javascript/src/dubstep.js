@@ -1,5 +1,7 @@
 "use strict";
 
 module.exports = function songDecoder(song) {
-  return song.split("WUB").join(" ");
+  var replacedWUBs = song.replace(/WUB/g, " ");
+
+  return replacedWUBs.replace(/\b\s+/g, " ");
 }

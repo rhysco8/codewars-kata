@@ -10,4 +10,8 @@ describe('decodes dubstep song', () => {
   test('converts "AWUBBWUBC" to "A B C"', () => {
     expect(songDecoder("AWUBBWUBC")).toBe("A B C");
   });
+
+  test('converts "AWUBWUBB" to "A B"', () => {
+    expect(songDecoder("AWUBWUBB")).toBe("A B");
+  });
 });
