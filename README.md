@@ -13,3 +13,4 @@ TDDing Codewars katas. The code for the katas can be found in `javascript/src` a
 * [Tribonacci Sequence](https://www.codewars.com/kata/556deca17c58da83c00002db/train/javascript)
 * [Persistent Bugger](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/javascript)
 * [Dubstep](https://www.codewars.com/kata/551dc350bf4e526099000ae5/train/javascript)
+* [Convert to Camel Case](https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript)
