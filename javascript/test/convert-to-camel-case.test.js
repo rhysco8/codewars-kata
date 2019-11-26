@@ -11,11 +11,7 @@ describe('converts string to camel case', () => {
     expect(toCamelCase("a")).toBe("a");
   });
 
-  test('removes dash delimiters', () => {
-    expect(toCamelCase("a-B")).toBe("aB");
-  });
-
-  test('removes underscore delimiters', () => {
-    expect(toCamelCase("a_B")).toBe("aB");
+  test('removes word delimiters', () => {
+    expect(toCamelCase("a-B_C")).toBe("aBC");
   });
 });
