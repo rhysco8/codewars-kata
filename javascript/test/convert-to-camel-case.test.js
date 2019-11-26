@@ -6,4 +6,8 @@ describe('converts string to camel case', () => {
   test('returns empty string', () => {
     expect(toCamelCase("")).toBe("")
   });
+
+  test('returns single word', () => {
+    expect(toCamelCase("a")).toBe("a")
+  })
 });
