@@ -14,4 +14,8 @@ describe('converts string to camel case', () => {
   test('removes word delimiters', () => {
     expect(toCamelCase("a-B_C")).toBe("aBC");
   });
+
+  test('capitalises first letter of subsequent words', () => {
+    expect(toCamelCase("a-b")).toBe("aB");
+  });
 });
