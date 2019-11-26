@@ -1,5 +1,5 @@
 "use strict";
 
 module.exports = function toCamelCase(string) {
-  return string.replace("-", "")
+  return string.replace(/(-|_)/g, "")
 }
