@@ -18,4 +18,8 @@ describe('converts string to camel case', () => {
   test('capitalises first letter of subsequent words', () => {
     expect(toCamelCase("a-b")).toBe("aB");
   });
+
+  test('maintains capitalised state of first word', () => {
+    expect(toCamelCase("A_B_C")).toBe("ABC");
+  })
 });
